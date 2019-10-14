@@ -2,15 +2,50 @@
 box-sizing: border-box;
 }
 
+/* General Styles */
+
 body {
     font-family: 'Merriweather', serif;
     font-family: 'Montserrat', sans-serif;
+    background-color: rgb(241, 237, 237);
 }
 
+header {
+    text-align: center;
+    background-color: rgb(39, 38, 38);
+    color: #fff;
+    
+}
 
+h1 {
+    margin-top: 0;
+    padding: 1em;
+    font-size: 1.5em;
+}
 
+h2 {
+    text-align: center;;
+}
 
+p {
+    
+    color: rgb(122, 120, 120);
+}
 
+#btn {
+    margin: 1em auto;
+    
+}
+
+footer {
+    font-size: .75em;
+    text-align: center;
+    padding: 2em;
+}
+
+.copyright {
+    font-style: italic;
+}
 
 
 
