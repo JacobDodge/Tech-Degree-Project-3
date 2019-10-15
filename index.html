@@ -16,21 +16,23 @@
     </header>
     <main>
         <h2>Signup for our newsletter</h2>
-        <p>Get the latest news on how your code is doing right in your inbox</p>
+        <div>
+            <p class="news-p">Get the latest news on how your code is doing right in your inbox</p>
+        </div>
         <section>
             <form action="index.html" method="post">
                 
 
                 
 
-                <fieldset>
+                <fieldset class="contact-field">
                     <legend>Contact Information</legend>
 
                     <label for="name">Full Name</label>
-                    <input type="text" id="name" name="user_name">
+                    <input type="text" id="name" name="user_name" placeholder="Required">
 
                     <label for="mail">Email Address</label>
-                    <input type="email" id="mail" name="user_email">
+                    <input type="email" id="mail" name="user_email" placeholder="Required">
 
                     <label for="phone">Phone Number</label>
                     <input type="tel" id="phone" name="user_phone">
@@ -43,7 +45,7 @@
                     
                     <label for="state-dropdown">State</label>
                     <select name="state_dropdown" id="state-dropdown">
-                    
+                        <option selected="selected">Choose State</option>
                         <option value="Alabama">Alabama</option>
                         <option value="Alaska">Alaska</option>
                         <option value="Arizona">Arizona</option>
@@ -77,7 +79,7 @@
                         <option value="New Mexico">New Mexico</option>
                         <option value="New York">New York</option>
                         <option value="North Carolina">North Carolina</option>
-                        <option value="North Dakota"></option>
+                        <option value="North Dakota">North Dakota</option>
                         <option value="Ohio">Ohio</option>
                         <option value="Oklahoma">Oklahoma</option>
                         <option value="Oregon">Oregon</option>
@@ -95,10 +97,11 @@
                         <option value="Wisconsin">Wisconsin</option>
                         <option value="Wyoming">Wyoming</option>
                     </select>
+                    
 
 
                     <label for="zipcode">Zipcode</label>
-                    <input type="number" id="zipcode" name="user_zipcode">
+                    <input type="text" id="zipcode" name="user_zipcode">
 
                 </fieldset>
 

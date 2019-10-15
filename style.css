@@ -24,33 +24,152 @@ h1 {
 }
 
 h2 {
-    text-align: center;;
+    text-align: center;
+    margin-bottom: 0;
 }
 
 p {
-    
-    color: rgb(122, 120, 120);
+    color: rgb(179, 176, 176);
+}
+
+.news-p {
+    text-align: center;
+    margin-top: .5em;
+    margin-bottom: 2em;
+   
+}
+
+div {
+    border-bottom: 4px solid #000;
+    padding: bottom 1em;
+
+}
+
+section {
+    margin-top: 1.5em;
+}
+
+fieldset {
+    border: 0;
+}
+
+legend {
+    margin-bottom: .5em;
+    font-weight: bold;
+    font-size: 1.25em;
 }
 
 #btn {
     margin: 1em auto;
-    
+    font-weight: 600;
+    width: 100%;
+    padding: 1.5em;
+    border-radius: 4px;
+    background-color: #54bAB3;
+    color: #FFF;
 }
 
 footer {
     font-size: .75em;
     text-align: center;
     padding: 2em;
+    
 }
 
-.copyright {
+#topic-section {
+    height: auto;;
+    width: 100%;
+}
+
+.copyright, ::placeholder {
     font-style: italic;
 }
 
+.choose-state {
+   color: rgb(104, 103, 103);
+   font-size: .5em;
+}
+
+/* Pseudo Selectors */
+
+::placeholder {
+    text-align: right;
+    font-size: .75em;
+    padding-right: 1em
+}
+
+/* Attribute Selectors */
+
+label[for="name"],label[for="mail"],
+label[for="phone"],label[for="address"],
+label[for="city"],label[for="state-dropdown"],label[for="zipcode"] {
+    display: block;
+    color: rgb(104, 103, 103);
+    margin-bottom: .5em;
+}
+
+input[type="name"],input[type="email"],
+input[type="tel"],input[type="text"], input[type="number"],
+#state-dropdown, textarea
+ {
+    display: block;
+    background-color: rgb(231, 227, 227);
+    width: 100%;
+    padding: .5em;
+    border: none;
+    border-radius: 2px;
+    margin-bottom: 1em;
+}
+
+label[for="html-news"],label[for="css-news"],label[for="javascript-news"],
+label[for="html-format"],label[for="plain-text"] {
+    display:inline-block;
+    margin-bottom: .5em;
+    margin-left: .5em;
+    font-size: .80em;
+    color: rgb(104, 103, 103);
+}
 
 
 
 @media (min-width: 768px) {
 
+    h1 {
+        margin-bottom: 2.5em;
+    }
+
+    .news-p {
+        margin-bottom: 3em;
+    }
+
+    main {
+        margin: 0 auto;
+        max-width: 800px;
+    }
+
+    label[for="name"],label[for="mail"],
+    label[for="phone"],label[for="address"],
+    label[for="city"],label[for="state-dropdown"],label[for="zipcode"] {
+
+        display: block;
+        color: rgb(104, 103, 103);
+        margin-bottom: .5em;
+        float: left;
+        width: 20%;
+}
+
+
+    input[type="name"],input[type="email"],
+    input[type="tel"],input[type="text"], input[type="number"],
+    #state-dropdown {
+        
+        display: inline-block;
+        background-color: rgb(231, 227, 227);
+        width: 80%;
+        padding: .5em;
+        border: none;
+        border-radius: 2px;
+        margin-bottom: 1em;
+    }
 
 }
