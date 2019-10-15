@@ -7,25 +7,33 @@ box-sizing: border-box;
 body {
     font-family: 'Merriweather', serif;
     font-family: 'Montserrat', sans-serif;
-    background-color: rgb(241, 237, 237);
+    background-color: rgb(53, 52, 61);
 }
 
 header {
     text-align: center;
-    background-color: rgb(39, 38, 38);
+    background-color: rgb(67, 7, 136);
     color: #fff;
-    
+    background: #330ECE;
+    background: -moz-linear-gradient(top, #330ECE 0%, #5258A4 50%, #3B2DC5 100%);
+    background: -webkit-linear-gradient(top, #330ECE 0%, #5258A4 50%, #3B2DC5 100%);
+    background: linear-gradient(to bottom, #330ECE 0%, #5258A4 50%, #3B2DC5 100%);
+    box-shadow: -3px 4px 5px -6px #303030;
 }
 
 h1 {
     margin-top: 0;
     padding: 1em;
     font-size: 1.5em;
+    text-transform: uppercase;
+    
 }
 
 h2 {
     text-align: center;
     margin-bottom: 0;
+    color: #fff;
+    font-size: 1.25em;
 }
 
 p {
@@ -40,23 +48,34 @@ p {
 }
 
 div {
-    border-bottom: 4px solid #000;
+    border-bottom: 4px solid #fff;
     padding: bottom 1em;
 
 }
 
+
 section {
-    margin-top: 1.5em;
+    margin-top: 1em;
 }
 
 fieldset {
     border: 0;
 }
 
+.contact-field{
+    border-bottom: 4px solid white;
+    
+}
+
+.news-letter{
+    margin-top: 1em;
+}
+
 legend {
     margin-bottom: .5em;
     font-weight: bold;
     font-size: 1.25em;
+    color: rgb(228, 228, 228);
 }
 
 #btn {
@@ -65,19 +84,32 @@ legend {
     width: 100%;
     padding: 1.5em;
     border-radius: 4px;
-    background-color: #54bAB3;
+    background-color: rgb(117, 107, 206);
     color: #FFF;
 }
+
+#btn:hover {
+    background-color: #fff;
+    color: rgb(117, 107, 206);
+}
+
+#btn:active {
+    background-color: rgb(69, 16, 216);
+    color: #fff;
+}
+
+
 
 footer {
     font-size: .75em;
     text-align: center;
     padding: 2em;
+    color: #fff;
     
 }
 
 #topic-section {
-    height: auto;;
+    height: auto;
     width: 100%;
 }
 
@@ -104,7 +136,7 @@ label[for="name"],label[for="mail"],
 label[for="phone"],label[for="address"],
 label[for="city"],label[for="state-dropdown"],label[for="zipcode"] {
     display: block;
-    color: rgb(104, 103, 103);
+    color: rgb(228, 228, 228);
     margin-bottom: .5em;
 }
 
@@ -119,6 +151,18 @@ input[type="tel"],input[type="text"], input[type="number"],
     border: none;
     border-radius: 2px;
     margin-bottom: 1em;
+    transition: background 0.75s ease-in-out;
+}
+
+input[id="zipcode"] {
+    width: 50%;
+}
+
+input[type="name"]:focus,input[type="email"]:focus,
+input[type="tel"]:focus,input[type="text"]:focus, input[type="number"]:focus,
+textarea:focus {
+    background-color: rgb(210, 199, 252);
+    transition: background 0.75s ease-in-out;
 }
 
 label[for="html-news"],label[for="css-news"],label[for="javascript-news"],
@@ -127,10 +171,17 @@ label[for="html-format"],label[for="plain-text"] {
     margin-bottom: .5em;
     margin-left: .5em;
     font-size: .80em;
-    color: rgb(104, 103, 103);
+    color: rgb(228, 228, 228);
 }
 
-
+label[for="html-news"]:hover,label[for="css-news"]:hover,label[for="javascript-news"]:hover,
+label[for="html-format"]:hover,label[for="plain-text"]:hover {
+    display:inline-block;
+    margin-bottom: .5em;
+    margin-left: .5em;
+    font-size: .80em;
+    color: rgb(216, 207, 250);
+}
 
 @media (min-width: 768px) {
 
@@ -152,7 +203,7 @@ label[for="html-format"],label[for="plain-text"] {
     label[for="city"],label[for="state-dropdown"],label[for="zipcode"] {
 
         display: block;
-        color: rgb(104, 103, 103);
+        color: rgb(228, 228, 228);
         margin-bottom: .5em;
         float: left;
         width: 20%;
