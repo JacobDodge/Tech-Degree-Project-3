@@ -15,7 +15,6 @@ header {
     background-color: rgb(67, 7, 136);
     color: #fff;
     background: #330ECE;
-    
     background: linear-gradient(to bottom, #330ECE 0%, #5258A4 50%, #3B2DC5 100%);
     box-shadow: -3px 4px 5px -6px #303030;
 }
@@ -25,33 +24,30 @@ h1 {
     padding: 1em;
     font-size: 1.5em;
     text-transform: uppercase;
-    
 }
 
 h2 {
     text-align: center;
     margin-bottom: 0;
     color: #fff;
-    font-size: 1.25em;
+    font-size: 1.6em;
 }
 
 p {
     color: rgb(179, 176, 176);
+    font-size: 1.1em;
 }
 
 .news-p {
     text-align: center;
     margin-top: .5em;
     margin-bottom: 2em;
-   
 }
 
 div {
     border-bottom: 4px solid #fff;
     padding-bottom: 1em;
-
 }
-
 
 section {
     margin-top: 1em;
@@ -63,7 +59,6 @@ fieldset {
 
 .contact-field{
     border-bottom: 4px solid white;
-    
 }
 
 .news-letter{
@@ -71,21 +66,48 @@ fieldset {
 }
 
 legend {
-    margin-bottom: .5em;
+    margin-bottom: 1em;
     font-weight: bold;
-    font-size: 1.25em;
+    font-size: 1.5em;
     color: rgb(228, 228, 228);
 }
 
 #btn {
     margin: 1em auto;
-    font-weight: 600;
+    font-weight: 700;
+    font-size: 1.5em;
     width: 100%;
-    padding: 1.5em;
-    border-radius: 4px;
+    padding: 1.25em;
+    border-radius: 6px;
     background-color: rgb(117, 107, 206);
     color: #FFF;
 }
+
+footer {
+    font-size: .75em;
+    text-align: center;
+    padding: 2em;
+    color: #fff;
+}
+
+#topic-section {
+    width: 100%;
+}
+
+.copyright,input#name::placeholder, input#mail::placeholder {
+    font-style: italic;
+}
+
+#state-dropdown {
+   color: rgb(104, 103, 103);
+   font-size: 1.2em;
+}
+
+select > option {
+    font-size: .8em;
+}
+
+/* Pseudo Selectors */
 
 #btn:hover {
     background-color: #fff;
@@ -98,38 +120,19 @@ legend {
 }
 
 
-
-footer {
-    font-size: .75em;
-    text-align: center;
-    padding: 2em;
-    color: #fff;
-    
+input#name::placeholder,
+input#mail::placeholder {
+    text-align: right;
+    font-size: 1em;
+    padding-right: 1em;
 }
-
-#topic-section {
-    height: auto;
-    width: 100%;
-}
-
-.copyright, ::placeholder {
-    font-style: italic;
-}
-
-.choose-state {
-   color: rgb(104, 103, 103);
-   font-size: .5em;
-}
-
-/* Pseudo Selectors */
 
 ::placeholder {
-    text-align: right;
-    font-size: .75em;
-    padding-right: 1em
+    color: rgb(104, 103, 103);
 }
 
 /* Attribute Selectors */
+
 
 label[for="name"],label[for="mail"],
 label[for="phone"],label[for="address"],
@@ -137,6 +140,7 @@ label[for="city"],label[for="state-dropdown"],label[for="zipcode"] {
     display: block;
     color: rgb(228, 228, 228);
     margin-bottom: .5em;
+    font-weight: 600;
 }
 
 input[type="name"],input[type="email"],
@@ -148,9 +152,10 @@ input[type="tel"],input[type="text"], input[type="number"],
     width: 100%;
     padding: .5em;
     border: none;
-    border-radius: 2px;
+    border-radius: 6px;
     margin-bottom: 1em;
     transition: background 0.75s ease-in-out;
+    line-height: 1.7;
 }
 
 input[id="zipcode"] {
@@ -164,12 +169,13 @@ textarea:focus {
     transition: background 0.75s ease-in-out;
 }
 
+
 label[for="html-news"],label[for="css-news"],label[for="javascript-news"],
 label[for="html-format"],label[for="plain-text"] {
     display:inline-block;
     margin-bottom: .5em;
     margin-left: .5em;
-    font-size: .80em;
+    font-size: .90em;
     color: rgb(228, 228, 228);
 }
 
@@ -178,7 +184,7 @@ label[for="html-format"]:hover,label[for="plain-text"]:hover {
     display:inline-block;
     margin-bottom: .5em;
     margin-left: .5em;
-    font-size: .80em;
+    font-size: 1em;
     color: rgb(216, 207, 250);
 }
 
@@ -206,6 +212,7 @@ label[for="html-format"]:hover,label[for="plain-text"]:hover {
         margin-bottom: .5em;
         float: left;
         width: 20%;
+        font-size: 1.2em;
 }
 
 
@@ -218,7 +225,7 @@ label[for="html-format"]:hover,label[for="plain-text"]:hover {
         width: 80%;
         padding: .5em;
         border: none;
-        border-radius: 2px;
+        border-radius: 6px;
         margin-bottom: 1em;
     }
 
