@@ -90,9 +90,6 @@ footer {
     color: #fff;
 }
 
-#topic-section {
-    width: 100%;
-}
 
 .copyright,input#name::placeholder, input#mail::placeholder {
     font-style: italic;
@@ -157,6 +154,15 @@ input[type="tel"],input[type="text"], input[type="number"],
     transition: background 0.75s ease-in-out;
     line-height: 1.7;
 }
+
+label[for="topics-section"] {
+    display: block;
+    color: rgb(179, 176, 176);
+    margin-top: .5em;
+    margin-bottom: 2em;
+    font-size: 1.1em;
+}
+
 
 input[id="zipcode"] {
     width: 50%;
