@@ -15,8 +15,7 @@ header {
     background-color: rgb(67, 7, 136);
     color: #fff;
     background: #330ECE;
-    background: -moz-linear-gradient(top, #330ECE 0%, #5258A4 50%, #3B2DC5 100%);
-    background: -webkit-linear-gradient(top, #330ECE 0%, #5258A4 50%, #3B2DC5 100%);
+    
     background: linear-gradient(to bottom, #330ECE 0%, #5258A4 50%, #3B2DC5 100%);
     box-shadow: -3px 4px 5px -6px #303030;
 }
@@ -49,7 +48,7 @@ p {
 
 div {
     border-bottom: 4px solid #fff;
-    padding: bottom 1em;
+    padding-bottom: 1em;
 
 }
 
